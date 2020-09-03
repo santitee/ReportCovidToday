@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ReportCovidToday</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="hospitalized">Hospitalized</string>
+    <string name="new_confirmed">New Confirmed</string>
+    <string name="deaths">Deaths</string>
+    <string name="homebanner">HomeBanner</string>
+</resources>

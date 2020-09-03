@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="412dp"
+        android:layout_height="115dp"
+        android:contentDescription="@string/homebanner"
+        app:layout_constraintBottom_toTopOf="@+id/Confirmed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home_banner" />
+
+
+    <Button
+        android:id="@+id/Confirmed"
+        android:layout_width="410dp"
+        android:layout_height="115dp"
+        android:layout_marginEnd="1dp"
+        android:background="@android:color/holo_red_light"
+        android:text="@string/confirmed"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/NewConfirmed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/NewConfirmed"
+        android:layout_width="414dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="2dp"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/new_confirmed"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/Hospitalized"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Confirmed" />
+
+    <Button
+        android:id="@+id/Hospitalized"
+        android:layout_width="414dp"
+        android:layout_height="101dp"
+        android:background="@android:color/holo_green_dark"
+        android:text="@string/hospitalized"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/Deaths"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewConfirmed" />
+
+    <Button
+        android:id="@+id/Deaths"
+        android:layout_width="414dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/darker_gray"
+        android:text="@string/deaths"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Hospitalized" />
+
+
+</android.support.constraint.ConstraintLayout>
